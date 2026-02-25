@@ -35,6 +35,12 @@ hello-gtk-python/
 - PyGObject
 - uv
 
+Install uv (Python package manager):
+
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
 Check if everything is installed:
 
 ```bash
@@ -45,6 +51,12 @@ On Ubuntu/Debian:
 
 ```bash
 sudo apt install python3-gi python3-gi-cairo gir1.2-adw-1 meson ninja-build blueprint-compiler
+```
+
+On Fedora:
+
+```bash
+sudo dnf install python3-gobject python3-gobject-devel gtk4-devel libadwaita-devel meson ninja-build blueprint-compiler
 ```
 
 ## Building
