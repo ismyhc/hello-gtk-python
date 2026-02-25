@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.example.HelloGtkPython</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+  <name>Hello GTK Python</name>
+  <summary>A GTK4/Adwaita Python application</summary>
+  <description>
+    <p>A template GTK4/Adwaita application built with Python and Blueprint.</p>
+  </description>
+  <launchable type="desktop-id">com.example.HelloGtkPython.desktop</launchable>
+  <url type="homepage">https://example.com</url>
+  <content_rating type="oars-1.1" />
+  <releases>
+    <release version="0.1.0" date="2025-01-01">
+      <description>
+        <p>Initial release.</p>
+      </description>
+    </release>
+  </releases>
+</component>

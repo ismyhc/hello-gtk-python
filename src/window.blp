@@ -1,0 +1,41 @@
+using Gtk 4.0;
+using Adw 1;
+
+menu primary_menu {
+  section {
+    item {
+      label: _("About");
+      action: "app.about";
+    }
+  }
+}
+
+template $HelloGtkPythonWindow: Adw.ApplicationWindow {
+  default-width: 600;
+  default-height: 400;
+  title: _("Hello GTK Python");
+
+  content: Adw.ToolbarView {
+    [top]
+    Adw.HeaderBar {
+      [end]
+      Gtk.MenuButton {
+        primary: true;
+        icon-name: "open-menu-symbolic";
+        tooltip-text: _("Menu");
+        menu-model: primary_menu;
+      }
+    }
+
+    content: Gtk.Box {
+      orientation: vertical;
+      halign: center;
+      valign: center;
+
+      Gtk.Label label {
+        label: _("Hello, GTK Python!");
+        styles ["title-1"]
+      }
+    };
+  };
+}

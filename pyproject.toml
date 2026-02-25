@@ -1,0 +1,14 @@
+[project]
+name = "hello-gtk-python"
+version = "0.1.0"
+description = "A GTK4/Adwaita Python application template"
+requires-python = ">= 3.10"
+license = "MIT"
+dependencies = []
+
+[dependency-groups]
+dev = []
+
+[tool.uv]
+# PyGObject must be installed as a system package (python3-gi)
+# Use --system-site-packages when creating the venv so it's accessible

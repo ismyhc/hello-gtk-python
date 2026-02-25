@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the hello-gtk-python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: hello-gtk-python\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-25 16:59-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/application.py:33 src/window.blp:16
+#: data/com.example.HelloGtkPython.desktop.in:3
+#: data/com.example.HelloGtkPython.metainfo.xml.in:6
+msgid "Hello GTK Python"
+msgstr ""
+
+#: src/application.py:35
+msgid "Developer"
+msgstr ""
+
+#: src/application.py:38
+msgid "\\u00a9 2025 Developer"
+msgstr ""
+
+#: src/window.blp:7
+msgid "About"
+msgstr ""
+
+#: src/window.blp:25
+msgid "Menu"
+msgstr ""
+
+#: src/window.blp:36
+msgid "Hello, GTK Python!"
+msgstr ""
+
+#: data/com.example.HelloGtkPython.desktop.in:4
+#: data/com.example.HelloGtkPython.metainfo.xml.in:7
+msgid "A GTK4/Adwaita Python application"
+msgstr ""
+
+#: data/com.example.HelloGtkPython.metainfo.xml.in:9
+msgid "A template GTK4/Adwaita application built with Python and Blueprint."
+msgstr ""
+
+#: data/com.example.HelloGtkPython.metainfo.xml.in:17
+msgid "Initial release."
+msgstr ""

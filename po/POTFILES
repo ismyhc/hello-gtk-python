@@ -1,0 +1,4 @@
+src/application.py
+src/window.blp
+data/com.example.HelloGtkPython.desktop.in
+data/com.example.HelloGtkPython.metainfo.xml.in
