@@ -124,6 +124,10 @@ meson setup build
 meson compile -C build && ninja -C build run
 ```
 
+**Note:** Commands elsewhere in this README that reference `hello-gtk-python` or
+`com.example.HelloGtkPython` will need to use your new project name and application ID instead
+(e.g. `ninja -C build my-cool-app-pot`, `flatpak run com.mycompany.MyCoolApp`).
+
 ## Translations (i18n)
 
 Wrap user-visible strings with `_()` to make them translatable:
