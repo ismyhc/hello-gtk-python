@@ -177,10 +177,13 @@ def main():
     else:
         print(f'  {red("✗")} {bold("Some required dependencies are missing.")}')
         print()
-        print(f'  {cyan("On Ubuntu/Debian, install with:")}')
+        print(f'  {cyan("On Ubuntu/Debian:")}')
         print(f'  {dim("$")} sudo apt install python3-gi python3-gi-cairo gir1.2-adw-1 \\')
-        print(f'      meson ninja-build blueprint-compiler pkg-config \\')
-        print(f'      libglib2.0-dev-bin')
+        print(f'      meson ninja-build blueprint-compiler')
+        print()
+        print(f'  {cyan("On Fedora:")}')
+        print(f'  {dim("$")} sudo dnf install python3-gobject python3-gobject-devel \\')
+        print(f'      gtk4-devel libadwaita-devel meson ninja-build blueprint-compiler')
 
     print()
     return 0 if ok else 1

@@ -3,6 +3,7 @@
 
 import os
 import re
+import shutil
 import sys
 
 
@@ -114,6 +115,15 @@ def main():
         sys.exit(0)
 
     root = os.path.dirname(os.path.abspath(__file__))
+
+    # Clean up build directories
+    build_dirs = ['build', 'builddir', '_build', 'build-flatpak', '.flatpak-builder']
+    for d in build_dirs:
+        path = os.path.join(root, d)
+        if os.path.isdir(path):
+            print(f'  Removing {d}/')
+            shutil.rmtree(path)
+
     files = collect_files(root)
 
     # Replace file contents
@@ -148,6 +158,12 @@ def main():
 
     print()
     print(f'Done! Updated content in {replaced_count} files, renamed {renamed_count} files.')
+    print()
+    print('Next steps:')
+    print(f'  uv venv --system-site-packages')
+    print(f'  uv sync')
+    print(f'  meson setup build')
+    print(f'  meson compile -C build && ninja -C build run')
     print()
     print('You can now delete this rename.py script if you no longer need it.')
 

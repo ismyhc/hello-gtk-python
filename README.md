@@ -113,7 +113,16 @@ It will prompt for:
 - **Application ID** (e.g. `com.mycompany.MyCoolApp`)
 - **Display name** (e.g. `My Cool App`)
 
-This renames all files and replaces every instance of `hello-gtk-python`, `HelloGtkPython`, `com.example.HelloGtkPython`, etc. throughout the project.
+This renames all files and replaces every instance of `hello-gtk-python`, `HelloGtkPython`, `com.example.HelloGtkPython`, etc. throughout the project. Any existing build directories are automatically cleaned up.
+
+After renaming, re-run the initial setup:
+
+```bash
+uv venv --system-site-packages
+uv sync
+meson setup build
+meson compile -C build && ninja -C build run
+```
 
 ## Translations (i18n)
 
